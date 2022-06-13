@@ -1,9 +1,11 @@
 import type { NextPage } from 'next'
+import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-// import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+  const [isBurgerActive, setIsBurgerActive] = useState(false)
+
   return (
     <div>
       <Head>
@@ -12,7 +14,38 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <nav className="navbar is-black has-shadow">
+        <div className="container">
+          <div className="navbar-brand">
+            <a className="navbar-item" href="/">
+              a26.dev
+            </a>
+            <a
+              className={`navbar-burger ${isBurgerActive ? 'is-active' : ''}`}
+              onClick={() => setIsBurgerActive(!isBurgerActive)}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <div className={`navbar-menu ${isBurgerActive ? 'is-active' : ''}`}>
+            <div className="navbar-end">
+              <a href="" className="navbar-item">
+                Home
+              </a>
+              <a href="" className="navbar-item">
+                About
+              </a>
+              <a href="" className="navbar-item">
+                Apps
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main className="container">
         <section className="section">
           <div className="container">
             <h1 className="title">Hello World</h1>
@@ -24,16 +57,25 @@ const Home: NextPage = () => {
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+        <div className="container">
+          <div className="section">
+            <a
+              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Powered by{' '}
+              <span>
+                <Image
+                  src="/vercel.svg"
+                  alt="Vercel Logo"
+                  width={72}
+                  height={16}
+                />
+              </span>
+            </a>
+          </div>
+        </div>
       </footer>
     </div>
   )
