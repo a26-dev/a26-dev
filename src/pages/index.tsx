@@ -18,6 +18,11 @@ const Home: NextPage = () => {
         <div className="container">
           <div className="navbar-brand">
             <a className="navbar-item" href="/">
+              <img
+                src="/logo.png"
+                alt="Site logo"
+                style={{ maxHeight: 52, margin: '-8px 8px -8px 0' }}
+              />
               a26.dev
             </a>
             <a
