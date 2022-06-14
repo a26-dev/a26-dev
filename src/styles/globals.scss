@@ -1,12 +1,11 @@
+$primary: #49a909;
+
 @import 'bulma';
 
 body {
   &>div#__next {
-    &>div {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 }
-

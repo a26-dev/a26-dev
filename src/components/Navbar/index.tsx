@@ -32,12 +32,12 @@ const Navbar: FunctionComponent = (props) => {
             <a href="" className="navbar-item">
               Home
             </a>
-            <a href="" className="navbar-item">
+            {/* <a href="" className="navbar-item">
               About
             </a>
             <a href="" className="navbar-item">
               Apps
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
