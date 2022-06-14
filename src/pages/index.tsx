@@ -32,6 +32,7 @@ const Home: NextPage = () => {
             <div className="column is-6-tablet is-5-desktop has-text-centered">
               <Image
                 src="/assets/undraw_home_screen_re_640d.svg"
+                alt="An ilustration of a person holding apps"
                 width={466}
                 height={466}
               />

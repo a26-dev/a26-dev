@@ -1,4 +1,5 @@
 import { FunctionComponent, useState } from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 
 const Navbar: FunctionComponent = (props) => {
@@ -8,16 +9,21 @@ const Navbar: FunctionComponent = (props) => {
     <nav className="navbar is-black has-shadow" {...props}>
       <div className="container">
         <div className="navbar-brand">
-          <a className="navbar-item pt-0 pb-0" href="/" style={{ gap: 16 }}>
-            <Image
-              src="/assets/logo.png"
-              alt="Site logo"
-              width={52}
-              height={52}
-              layout="fixed"
-            />
-            <span className="has-text-weight-semibold">a26.dev</span>
-          </a>
+          <Link href="/">
+            <div
+              className="navbar-item pt-0 pb-0"
+              style={{ gap: 16, cursor: 'pointer' }}
+            >
+              <Image
+                src="/assets/logo.png"
+                alt="Site logo"
+                width={52}
+                height={52}
+                layout="fixed"
+              />
+              <span className="has-text-weight-semibold">a26.dev</span>
+            </div>
+          </Link>
           <a
             className={`navbar-burger ${isBurgerActive ? 'is-active' : ''}`}
             onClick={() => setIsBurgerActive(!isBurgerActive)}
