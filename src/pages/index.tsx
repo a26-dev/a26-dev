@@ -41,9 +41,8 @@ const Home: NextPage = () => {
                 <div className="column is-6-tablet is-12-desktop">
                   <div className="is-size-4 mb-4">Check out the app list</div>
                   <p>
-                    All the apps are available at{' '}
-                    <span className="has-text-weight-semibold">a26.app</span>{' '}
-                    site for easy and customizable access
+                    For easy and customizable access all the apps are available
+                    at <span className="has-text-weight-semibold">a26.app</span>
                   </p>
                 </div>
                 <div className="column is-6-tablet is-12-desktop">

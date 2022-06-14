@@ -8,7 +8,7 @@ const Navbar: FunctionComponent = (props) => {
     <nav className="navbar is-black has-shadow" {...props}>
       <div className="container">
         <div className="navbar-brand">
-          <a className="navbar-item pt-0 pb-0" href="/" style={{ gap: 8 }}>
+          <a className="navbar-item pt-0 pb-0" href="/" style={{ gap: 16 }}>
             <Image
               src="/assets/logo.png"
               alt="Site logo"
@@ -16,7 +16,7 @@ const Navbar: FunctionComponent = (props) => {
               height={52}
               layout="fixed"
             />
-            <span>a26.dev</span>
+            <span className="has-text-weight-semibold">a26.dev</span>
           </a>
           <a
             className={`navbar-burger ${isBurgerActive ? 'is-active' : ''}`}
