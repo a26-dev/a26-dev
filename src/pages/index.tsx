@@ -33,24 +33,48 @@ const Home: NextPage = () => {
 
       <section className="section">
         <div className="container">
-          <div className="columns is-vcentered">
-            <div className="column is-3 has-text-right">
+          <div className="columns is-vcentered is-multiline">
+            <div className="column is-6-tablet is-3-desktop has-text-right">
               <h1 className="is-size-1 title">a26.dev</h1>
               <h2 className="is-size-2 subtitle">Free tools for ever</h2>
               <p>We develop digital tools to help with daily tasks</p>
             </div>
-            <div className="column is-5">
+            <div className="column is-6-tablet is-5-desktop has-text-centered">
               <Image
                 src="/assets/undraw_home_screen_re_640d.svg"
-                width={600}
-                height={600}
+                width={466}
+                height={466}
               />
             </div>
-            <div className="column is-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
-              placeat eius iste commodi maxime veritatis tempore, ducimus
-              accusamus ipsam, quaerat natus numquam nobis rem nisi nostrum
-              provident quae reprehenderit quis?
+            <div className="column is-12-tablet is-4-desktop">
+              <div className="is-size-4 mb-4">Check out the app list</div>
+              <p className="mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                placeat eius iste commodi maxime veritatis tempore, ducimus
+                accusamus ipsam, quaerat natus numquam nobis rem nisi nostrum
+                provident quae reprehenderit quis?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="columns is-8 is-variable">
+            <div className="column is-7-tablet">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                facere ab qui aspernatur. Cumque placeat architecto officia
+                impedit voluptatum. Odit doloremque voluptatibus possimus ullam
+                reprehenderit dolore facere, quasi nulla quia!
+              </p>
+            </div>
+            <div className="column  is-5-tablet">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, ex.
+              Quo error modi in cum excepturi consectetur rem? Molestiae quis
+              error est? Recusandae nam id deserunt suscipit, labore quis
+              expedita?
             </div>
           </div>
         </div>

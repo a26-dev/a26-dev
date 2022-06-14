@@ -3,7 +3,11 @@ import Image from 'next/image'
 
 const Footer: FunctionComponent = (props) => {
   return (
-    <footer className="section" {...props}>
+    <footer
+      className="section"
+      style={{ backgroundColor: '#f2f2f2', flexGrow: 1 }}
+      {...props}
+    >
       <div className="container">
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -20,7 +24,7 @@ const Footer: FunctionComponent = (props) => {
             />
           </span>
         </a>
-        <p>Bulma.io Undraw.co</p>
+        <p>Bulma.io unDraw.co</p>
       </div>
     </footer>
   )
