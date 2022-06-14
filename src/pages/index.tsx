@@ -40,8 +40,10 @@ const Home: NextPage = () => {
               <div className="columns is-multiline">
                 <div className="column is-6-tablet is-12-desktop">
                   <div className="is-size-4 mb-4">Check out the app list</div>
-                  <p className="mb-4">
-                    All the apps are available at a26.app site
+                  <p>
+                    All the apps are available at{' '}
+                    <span className="has-text-weight-semibold">a26.app</span>{' '}
+                    site for easy and customizable access
                   </p>
                 </div>
                 <div className="column is-6-tablet is-12-desktop">
