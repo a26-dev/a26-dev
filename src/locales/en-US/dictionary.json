@@ -1,0 +1,10 @@
+{
+  "common": {
+    "about": "about",
+    "home": "home",
+    "site-domain": "a26.dev"
+  },
+  "home": {
+    "subtitle": "useful apps for us"
+  }
+}

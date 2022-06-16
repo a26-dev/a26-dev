@@ -1,4 +1,5 @@
-import { FunctionComponent } from 'react'
+import type { FunctionComponent } from 'react'
+import Link from 'next/link'
 
 const Breadcrumb: FunctionComponent = (props) => {
   return (
@@ -6,7 +7,9 @@ const Breadcrumb: FunctionComponent = (props) => {
       <nav className="breadcrumb has-arrow-separator">
         <ul className="container">
           <li>
-            <a className="has-text-grey">Home</a>
+            <Link href="/">
+              <a className="has-text-grey">Home</a>
+            </Link>
           </li>
           <li className="is-active">
             <a>About</a>

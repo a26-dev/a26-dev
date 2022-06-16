@@ -1,16 +1,19 @@
-import { FunctionComponent, useState } from 'react'
+import { useState } from 'react'
+import type { FunctionComponent } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import useTranslation from '../../locales'
 
 const Navbar: FunctionComponent = (props) => {
   const [isBurgerActive, setIsBurgerActive] = useState(false)
+  const t = useTranslation()
 
   return (
     <nav className="navbar is-black has-shadow" {...props}>
       <div className="container">
         <div className="navbar-brand">
           <Link href="/">
-            <div
+            <a
               className="navbar-item pt-0 pb-0"
               style={{ gap: 16, cursor: 'pointer' }}
             >
@@ -22,7 +25,7 @@ const Navbar: FunctionComponent = (props) => {
                 layout="fixed"
               />
               <span className="has-text-weight-semibold">a26.dev</span>
-            </div>
+            </a>
           </Link>
           <a
             className={`navbar-burger ${isBurgerActive ? 'is-active' : ''}`}
@@ -35,15 +38,12 @@ const Navbar: FunctionComponent = (props) => {
         </div>
         <div className={`navbar-menu ${isBurgerActive ? 'is-active' : ''}`}>
           <div className="navbar-end">
-            <a href="" className="navbar-item">
-              Home
-            </a>
-            {/* <a href="" className="navbar-item">
-              About
-            </a>
-            <a href="" className="navbar-item">
-              Apps
-            </a> */}
+            <Link href="/">
+              <a className="navbar-item">{t('common:home')}</a>
+            </Link>
+            <Link href="/about">
+              <a className="navbar-item">{t('common:about')}</a>
+            </Link>
           </div>
         </div>
       </div>
