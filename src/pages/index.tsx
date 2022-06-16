@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           <div className="columns is-vcentered is-multiline">
             <div className="column is-6-tablet is-3-desktop has-text-right-desktop">
               <h1 className="is-size-1 title">{t('common:site-domain')}</h1>
-              <h2 className="is-size-2 subtitle">{t('home:subtitls')}</h2>
+              <h2 className="is-size-2 subtitle">{t('home:subtitle')}</h2>
               <p>We develop digital tools to help with daily tasks</p>
             </div>
             <div className="column is-6-tablet is-5-desktop has-text-centered">
