@@ -8,8 +8,12 @@
   "home": {
     "slogan": "apps úteis pra gente",
     "subtitle": "Desenvolvemos ferramentas digitais gratuítas para quem precisar",
+    "img-alt": "Ilustração de uma pessoa apoiada em um dispositivo móvel enquanto segura aplicativos flutuantes",
     "cta-title": "Confira a lista de apps",
     "cta-description": "Para acesso fácil e personalizável, todos os aplicativos estão disponíveis em",
     "cta-button": "Ir para a26.app"
+  },
+  "footer": {
+    "built-with": "Construído com"
   }
 }

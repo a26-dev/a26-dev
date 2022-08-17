@@ -8,8 +8,12 @@
   "home": {
     "slogan": "useful apps for us",
     "subtitle": "We develop free digital tools for anyone who needs it",
+    "img-alt": "Illustration of a person leaning on a mobile device while holding floating apps",
     "cta-title": "Check out the app list",
     "cta-description": "For easy and customizable access, all apps are available at",
     "cta-button": "Go to a26.app"
+  },
+  "footer": {
+    "built-with": "Built with"
   }
 }

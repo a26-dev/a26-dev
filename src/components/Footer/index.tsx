@@ -1,7 +1,8 @@
 import type { FunctionComponent } from 'react'
-import Image from 'next/image'
+import useTranslation from '../../locales'
 
 const Footer: FunctionComponent = (props) => {
+  const t = useTranslation()
   return (
     <footer
       className="section"
@@ -9,22 +10,35 @@ const Footer: FunctionComponent = (props) => {
       {...props}
     >
       <div className="container">
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span>
-            <Image
-              src="/assets/vercel.svg"
-              alt="Vercel Logo"
-              width={72}
-              height={16}
-            />
-          </span>
-        </a>
-        <p>Bulma.io unDraw.co</p>
+        <p>{t('footer:built-with')}</p>
+        <p>
+          <a
+            href="https://nextjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            NextJS.org
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://vercel.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Vercel.com
+          </a>
+        </p>
+        <p>
+          <a href="https://bulma.com" target="_blank" rel="noopener noreferrer">
+            Bulma.io
+          </a>
+        </p>
+        <p>
+          <a href="https://undraw.co" target="_blank" rel="noopener noreferrer">
+            unDraw.co
+          </a>
+        </p>
       </div>
     </footer>
   )
