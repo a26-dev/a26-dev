@@ -23,18 +23,12 @@ const Home: NextPage = () => {
         <div className="container">
           <div className="columns is-8 is-variable">
             <div className="column is-7-tablet">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                facere ab qui aspernatur. Cumque placeat architecto officia
-                impedit voluptatum. Odit doloremque voluptatibus possimus ullam
-                reprehenderit dolore facere, quasi nulla quia!
-              </p>
+              <p>{t('about:p-1st')}</p>
+              <br />
+              <p>{t('about:p-2nd')}</p>
             </div>
             <div className="column  is-5-tablet">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, ex.
-              Quo error modi in cum excepturi consectetur rem? Molestiae quis
-              error est? Recusandae nam id deserunt suscipit, labore quis
-              expedita?
+              <p>{t('about:p-3rd')}</p>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 {
   "common": {
-    "about": "sobre",
-    "home": "início",
+    "about": "Sobre",
+    "home": "Início",
     "site-domain": "a26.dev",
     "app-domain": "a26.app"
   },
@@ -12,6 +12,11 @@
     "cta-title": "Confira a lista de apps",
     "cta-description": "Para acesso fácil e personalizável, todos os aplicativos estão disponíveis em",
     "cta-button": "Ir para a26.app"
+  },
+  "about": {
+    "p-1st": "Somos uma organização sem fins lucrativos que tem como objetivo desenvolver aplicações gratuitas para quem precisar.",
+    "p-2nd": "Faça parte você também, envie sugestões de novos aplicativos, melhorias e compartilhe essa ideia!",
+    "p-3rd": "Ainda estamos organizando a casa. Em breve disponibilizaremos informações de contato para recebermos suas sugestões e conversarmos com calma. 😉"
   },
   "footer": {
     "built-with": "Construído com"
