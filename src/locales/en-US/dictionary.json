@@ -2,9 +2,14 @@
   "common": {
     "about": "about",
     "home": "home",
-    "site-domain": "a26.dev"
+    "site-domain": "a26.dev",
+    "app-domain": "a26.app"
   },
   "home": {
-    "subtitle": "useful apps for us"
+    "slogan": "useful apps for us",
+    "subtitle": "We develop free digital tools for anyone who needs it",
+    "cta-title": "Check out the app list",
+    "cta-description": "For easy and customizable access, all apps are available at",
+    "cta-button": "Go to a26.app"
   }
 }

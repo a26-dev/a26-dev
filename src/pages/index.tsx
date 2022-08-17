@@ -24,8 +24,8 @@ const Home: NextPage = () => {
           <div className="columns is-vcentered is-multiline">
             <div className="column is-6-tablet is-3-desktop has-text-right-desktop">
               <h1 className="is-size-1 title">{t('common:site-domain')}</h1>
-              <h2 className="is-size-2 subtitle">{t('home:subtitle')}</h2>
-              <p>We develop digital tools to help with daily tasks</p>
+              <h2 className="is-size-2 subtitle">{t('home:slogan')}</h2>
+              <p>{t('home:subtitle')}</p>
             </div>
             <div className="column is-6-tablet is-5-desktop has-text-centered">
               <Image
@@ -38,15 +38,17 @@ const Home: NextPage = () => {
             <div className="column is-12-tablet is-4-desktop">
               <div className="columns is-multiline">
                 <div className="column is-6-tablet is-12-desktop">
-                  <div className="is-size-4 mb-4">Check out the app list</div>
+                  <div className="is-size-4 mb-4">{t('home:cta-title')}</div>
                   <p>
-                    For easy and customizable access all the apps are available
-                    at <span className="has-text-weight-semibold">a26.app</span>
+                    {t('home:cta-description')}{' '}
+                    <span className="has-text-weight-semibold">
+                      {t('common:app-domain')}
+                    </span>
                   </p>
                 </div>
                 <div className="column is-6-tablet is-12-desktop">
                   <a className="button is-primary is-fullwidth is-size-3 has-text-weight-semibold">
-                    Go to a26.app
+                    {t('home:cta-button')}
                   </a>
                 </div>
               </div>
