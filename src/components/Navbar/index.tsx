@@ -24,7 +24,9 @@ const Navbar: FunctionComponent = (props) => {
                 height={52}
                 layout="fixed"
               />
-              <span className="has-text-weight-semibold">a26.dev</span>
+              <span className="has-text-weight-semibold">
+                {t('common:site-domain')}
+              </span>
             </a>
           </Link>
           <a

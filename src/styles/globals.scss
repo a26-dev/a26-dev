@@ -3,6 +3,10 @@ $link: $primary;
 
 @import 'bulma';
 
+html {
+  overflow-y: auto;
+}
+
 body {
   &>div#__next {
     min-height: 100vh;

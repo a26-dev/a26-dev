@@ -5,6 +5,7 @@ const nextConfig = {
     defaultLocale: 'en-US',
   },
   reactStrictMode: true,
+  swcMinify: true,
 }
 
 module.exports = nextConfig
