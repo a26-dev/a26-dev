@@ -48,7 +48,10 @@ const Home: NextPage = () => {
                   </p>
                 </div>
                 <div className="column is-6-tablet is-12-desktop">
-                  <a className="button is-primary is-fullwidth is-size-3 has-text-weight-semibold">
+                  <a
+                    href={`https://${t('common:app-domain')}`}
+                    className="button is-primary is-fullwidth is-size-3 has-text-weight-semibold"
+                  >
                     {t('home:cta-button')}
                   </a>
                 </div>
