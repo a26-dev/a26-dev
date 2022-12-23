@@ -62,6 +62,8 @@ const Home: NextPage = () => {
       </section>
 
       <Footer />
+
+      <!-- "¯\_(ツ)_/¯ -->
     </>
   )
 }
