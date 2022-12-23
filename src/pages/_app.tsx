@@ -5,7 +5,7 @@ import type { AppProps } from 'next/app';
 function MyApp({ Component, pageProps }: AppProps) {
   
   useEffect(() => {
-    console.log('¯\_(ツ)_/¯');
+    console.log('¯\\_(ツ)_/¯');
   }, []);
   
   return <Component {...pageProps} />;
